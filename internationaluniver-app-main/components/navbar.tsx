@@ -71,7 +71,6 @@ export default function Navbar({
     onLanguageChange?.(l);
     // глобальное событие для страниц
     try {
-      // @ts-expect-error CustomEvent type
       window.dispatchEvent(new CustomEvent("langchange", { detail: l }));
     } catch {}
   };
@@ -295,6 +294,12 @@ export default function Navbar({
             >
               {getTranslation("contact", lang)}
             </Link>
+            <Link
+              href="/mobility"
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 transition hover:text-orange-600 dark:text-zinc-300"
+            >
+              Erasmus+
+            </Link>
           </nav>
 
           {/* Right controls */}
@@ -459,6 +464,13 @@ export default function Navbar({
               className="rounded-xl px-3 py-2 text-sm font-bold uppercase tracking-widest text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-900"
             >
               {getTranslation("contact", lang)}
+            </Link>
+            <Link
+              href="/mobility"
+              onClick={() => setMobileOpen(false)}
+              className="rounded-xl px-3 py-2 text-sm font-bold uppercase tracking-widest text-zinc-700 hover:bg-zinc-100 dark:text-zinc-200 dark:hover:bg-zinc-900"
+            >
+              Erasmus+
             </Link>
 
             <div className="pt-3 space-y-3">
