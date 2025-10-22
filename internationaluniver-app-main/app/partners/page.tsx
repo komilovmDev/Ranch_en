@@ -12,6 +12,12 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { getTranslation, type Language } from "@/lib/i18n"
+import barcelona from '../../public/logo/barcelona.jpg'
+import lleida from '../../public/logo/lleida.jpg'
+import ege from '../../public/logo/ege.jpg'
+import padova from '../../public/logo/padova.jpg'
+import westrn from '../../public/logo/westrn.jpg'
+import jihoceska from '../../public/logo/jihoceska.jpg'
 
 function Glow() {
   return (
@@ -498,6 +504,184 @@ export default function PartnersPage() {
               </div>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* ERASMUS+ PARTNER UNIVERSITIES */}
+      <section id="erasmus-partners" className="border-b border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900 md:py-24">
+        <div className="container mx-auto px-4 md:px-8">
+          <SectionTitle
+            overline="Erasmus+ Cooperation"
+            title="🏛️ Erasmus+ Partner Universities"
+            description="Active Erasmus+ and international cooperation with leading institutions"
+          />
+          <p className="max-w-4xl text-zinc-700 dark:text-zinc-300 mb-8">
+            UTU-RANCH maintains active Erasmus+ and international cooperation with leading institutions, fostering global learning, joint research, and intercultural exchange.
+          </p>
+          
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* University of Lleida */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={lleida.src} alt="University of Lleida" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">University of Lleida</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Spain</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Ege University */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={ege.src} alt="Ege University" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">Ege University</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Turkey</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* University of Padua */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={padova.src} alt="University of Padua" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">University of Padua</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Italy</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* South Bohemian University */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={jihoceska.src} alt="South Bohemian University" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">South Bohemian University</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Czech Republic</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Caspian University */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={westrn.src} alt="Western Caspian University" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">Caspian University</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Azerbaijan</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Placeholder for future partners */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="rounded-2xl border-2 border-dashed border-zinc-300 bg-zinc-50 p-6 text-center dark:border-zinc-600 dark:bg-zinc-800"
+            >
+              <div className="w-16 h-16 bg-zinc-200 rounded-xl flex items-center justify-center mx-auto mb-4 dark:bg-zinc-700">
+                <Globe className="h-8 w-8 text-zinc-400" />
+              </div>
+              <h3 className="text-lg font-semibold text-zinc-600 dark:text-zinc-300 mb-2">More Partners Coming Soon</h3>
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                We are continuously expanding our international network
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
 

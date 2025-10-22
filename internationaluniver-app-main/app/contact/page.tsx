@@ -320,6 +320,70 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* LEADERSHIP */}
+      <section className="border-b border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900 md:py-24">
+        <div className="container mx-auto px-4 md:px-8">
+          <SectionTitle
+            overline="International Relations Office"
+            title="Leadership"
+            description="Meet our international relations team"
+          />
+          
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-950">
+              <h3 className="mb-4 text-lg font-extrabold uppercase text-zinc-900 dark:text-zinc-100">Leadership Team</h3>
+              <ul className="space-y-4 text-zinc-700 dark:text-zinc-300">
+                <li>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100">Vice-Rector for International Relations</div>
+                  <div className="text-sm">PhD, dotsent, Ruzmetov Davron Ibrogimovich</div>
+                  <a href="mailto:d.ruzmetov@utu-ranch.uz" className="text-orange-600 hover:underline text-sm">d.ruzmetov@utu-ranch.uz</a>
+                </li>
+                <li>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100">Head of International Relations Department</div>
+                  <div className="text-sm">Ataboev Javokhir Kamalovich</div>
+                  <a href="mailto:a.javoxir@utu-ranch.uz" className="text-orange-600 hover:underline text-sm">a.javoxir@utu-ranch.uz</a>
+                </li>
+                <li>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100">Erasmus+ Coordinator</div>
+                  <div className="text-sm">Jumaniyozova Shakhodat Kudrat kizi</div>
+                  <a href="mailto:internationaldepartment@utu-ranch.uz" className="text-orange-600 hover:underline text-sm">internationaldepartment@utu-ranch.uz</a>
+                </li>
+                <li>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100">Specialist of International Relations</div>
+                  <div className="text-sm">Rakhimboeva Mashkhura Bakhtiyor kizi</div>
+                  <a href="mailto:mashkhuraitaly@gmail.com" className="text-orange-600 hover:underline text-sm">mashkhuraitaly@gmail.com</a>
+                </li>
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-700 dark:bg-zinc-950">
+              <h3 className="mb-4 text-lg font-extrabold uppercase text-zinc-900 dark:text-zinc-100">General Contact</h3>
+              <div className="space-y-4 text-zinc-700 dark:text-zinc-300">
+                <div>
+                  <div className="font-semibold text-zinc-900 dark:text-zinc-100 mb-2">International Relations Office</div>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Mail className="h-4 w-4 text-orange-600" />
+                      <a href="mailto:internationaldepartment@utu-ranch.uz" className="text-orange-600 hover:underline">
+                        internationaldepartment@utu-ranch.uz
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-4 w-4 text-orange-600" />
+                      +998 99 825 0297 | +998 93 754 3833
+                    </div>
+                  </div>
+                </div>
+                <div className="pt-4 border-t border-zinc-200 dark:border-zinc-700">
+                  <div className="text-sm text-zinc-600 dark:text-zinc-400">
+                    For general inquiries about international programs, partnerships, and mobility opportunities, please contact our International Relations Office.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT FORM */}
       <section id="contact-form" className="border-b border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900 md:py-24">
         <div className="container mx-auto px-4 md:px-8">
