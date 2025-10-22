@@ -359,6 +359,207 @@ export default function VisaPage() {
         </div>
       </section>
 
+      {/* INSURANCE INFORMATION */}
+      <section className="border-b border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900 md:py-24">
+        <div className="container mx-auto px-4 md:px-8">
+          <SectionTitle
+            overline="Insurance"
+            title="🛡️ Insurance for Incoming Students and Staff"
+            description="Urgench Ranch University of Technology"
+          />
+          
+          <div className="max-w-4xl mx-auto mb-8">
+            <p className="text-zinc-700 dark:text-zinc-300 text-lg">
+              All international students and staff participating in exchange or mobility programs at Urgench Ranch University of Technology (UTU-RANCH) must have valid health and travel insurance for the entire duration of their stay in Uzbekistan.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* Why Insurance Is Required */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            >
+              <div className="flex items-center mb-4">
+                <CheckCircle className="mr-2 h-5 w-5 text-orange-600" />
+                <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100">Why Insurance Is Required</h3>
+              </div>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                Health insurance is a mandatory requirement for:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Visa application and residence in Uzbekistan",
+                  "Registration with migration authorities",
+                  "Enrolment at UTU-RANCH"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-300">
+                    <CheckCircle className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-zinc-600 dark:text-zinc-300 mt-4 text-sm">
+                Having valid insurance ensures access to medical treatment and emergency services while living in Uzbekistan.
+              </p>
+            </motion.div>
+
+            {/* What Your Insurance Must Cover */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            >
+              <div className="flex items-center mb-4">
+                <FileText className="mr-2 h-5 w-5 text-orange-600" />
+                <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100">What Your Insurance Must Cover</h3>
+              </div>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                Your insurance policy should include:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Medical treatment (outpatient and inpatient)",
+                  "Emergency care and hospitalisation",
+                  "Medical evacuation or repatriation",
+                  "Coverage valid within Uzbekistan",
+                  "Validity for the entire period of your mobility",
+                  "English, Russian, or Uzbek version of the policy"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-300">
+                    <CheckCircle className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="text-zinc-600 dark:text-zinc-300 mt-4 text-sm">
+                <strong>Optional but recommended:</strong> coverage for COVID-19, lost luggage, and personal liability.
+              </p>
+            </motion.div>
+
+            {/* How to Obtain Insurance */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            >
+              <div className="flex items-center mb-4">
+                <Clock className="mr-2 h-5 w-5 text-orange-600" />
+                <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100">How to Obtain Insurance</h3>
+              </div>
+              <ol className="space-y-3">
+                {[
+                  "Check the duration of your stay (semester, internship, or staff visit)",
+                  "Select a suitable insurance provider in your home country or internationally",
+                  "Purchase your policy online or through an agent before traveling",
+                  "Submit a copy of your insurance policy to the International Relations Department",
+                  "Keep both a printed and digital copy with you at all times"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-300">
+                    <span className="bg-orange-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">
+                      {index + 1}
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ol>
+            </motion.div>
+
+            {/* For Staff Mobility Participants */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-900"
+            >
+              <div className="flex items-center mb-4">
+                <Globe className="mr-2 h-5 w-5 text-orange-600" />
+                <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100">For Staff Mobility Participants</h3>
+              </div>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4">
+                Visiting lecturers, researchers, and administrative staff must also have valid medical insurance for the duration of their Erasmus+ or other mobility stay.
+              </p>
+              <p className="text-zinc-600 dark:text-zinc-300 mb-4 text-sm">
+                It should include:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  "Accident and health coverage",
+                  "Emergency evacuation and repatriation",
+                  "Coverage for any work-related travel within Uzbekistan"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-300">
+                    <CheckCircle className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Useful Information */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="mt-8 rounded-2xl border border-zinc-200 bg-white p-6 shadow-md dark:border-zinc-700 dark:bg-zinc-900"
+          >
+            <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100 mb-4">Useful Information</h3>
+            <ul className="space-y-3">
+              {[
+                "In Uzbekistan, medical care for foreigners is paid. Insurance allows direct coverage or reimbursement",
+                "Private clinics in Tashkent, Khiva, and Urgench often provide services to foreign citizens",
+                "The national health insurance system is currently under development; therefore, private insurance is necessary for all foreign guests",
+                "Keep all medical receipts and documents for reimbursement claims"
+              ].map((item, index) => (
+                <li key={index} className="flex items-start gap-2 text-zinc-600 dark:text-zinc-300">
+                  <CheckCircle className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Contact for Assistance */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="mt-8 rounded-2xl border border-orange-200 bg-orange-50 p-6 dark:border-orange-800 dark:bg-orange-900/20"
+          >
+            <h3 className="text-xl font-black uppercase text-zinc-900 dark:text-zinc-100 mb-4">📍 Contact for Assistance</h3>
+            <div className="space-y-3 text-zinc-700 dark:text-zinc-300">
+              <div>
+                <strong>International Relations Department</strong><br/>
+                Urgench Ranch University of Technology
+              </div>
+              <div>
+                <strong>Email:</strong> <a href="mailto:internationaldepartment@utu-ranch.uz" className="text-orange-600 hover:underline">internationaldepartment@utu-ranch.uz</a>
+              </div>
+              <div>
+                <strong>Phone:</strong> +998 93 754 38 33
+              </div>
+              <div>
+                <strong>Address:</strong> Urgench, Khorezm region, Uzbekistan
+              </div>
+              <p className="mt-4 text-sm">
+                For any questions regarding insurance coverage or document submission, please contact us before your arrival.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden bg-black px-4 py-20 text-center text-white md:px-8">
         <video
