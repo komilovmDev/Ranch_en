@@ -332,7 +332,8 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* PARTNERS */}
+      {/* PARTNERS - COMMENTED OUT FOR NOW */}
+      {/* 
       <section id="partners" className="border-b border-zinc-200 bg-white py-16 dark:border-zinc-800 dark:bg-zinc-950 md:py-24">
         <div className="container mx-auto px-4 md:px-8">
           <SectionTitle
@@ -506,6 +507,7 @@ export default function PartnersPage() {
           </Tabs>
         </div>
       </section>
+      */}
 
       {/* ERASMUS+ PARTNER UNIVERSITIES */}
       <section id="erasmus-partners" className="border-b border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900 md:py-24">
@@ -665,12 +667,44 @@ export default function PartnersPage() {
               </div>
             </motion.div>
 
-            {/* Placeholder for future partners */}
+            {/* University of Barcelona */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.5 }}
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-md transition hover:shadow-xl dark:border-zinc-700 dark:bg-zinc-950"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-20 h-16 bg-white rounded-xl flex items-center justify-center p-2 border border-zinc-200 dark:border-zinc-700">
+                  <img src={barcelona.src} alt="University of Barcelona" className="max-w-full max-h-full object-contain" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-black uppercase text-zinc-900 dark:text-zinc-100">University of Barcelona</h3>
+                  <p className="text-sm text-zinc-600 dark:text-zinc-300">Spain</p>
+                </div>
+              </div>
+              <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-4 w-4 text-indigo-600" />
+                  <span>Erasmus+ Study Mobility</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="h-4 w-4 text-indigo-600" />
+                  <span>Staff Exchange Programs</span>
+                </div>
+              </div>
+              <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+                Leading Spanish university with excellence in medical and economic research.
+              </p>
+            </motion.div>
+
+            {/* Placeholder for future partners */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.6 }}
               className="rounded-2xl border-2 border-dashed border-zinc-300 bg-zinc-50 p-6 text-center dark:border-zinc-600 dark:bg-zinc-800"
             >
               <div className="w-16 h-16 bg-zinc-200 rounded-xl flex items-center justify-center mx-auto mb-4 dark:bg-zinc-700">

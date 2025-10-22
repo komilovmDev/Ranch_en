@@ -113,6 +113,7 @@ export default function Navbar({
   const studentPages = useMemo(
     () => [
       { name: getTranslation("programs", lang), href: "/programs" },
+      { name: "Student Mobility", href: "/student-mobility" },
       { name: getTranslation("visa", lang), href: "/visa" },
       { name: getTranslation("accommodation", lang), href: "/accommodation" },
       { name: getTranslation("studentResources", lang), href: "/resources" },
