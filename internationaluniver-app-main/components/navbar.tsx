@@ -114,6 +114,7 @@ export default function Navbar({
     () => [
       { name: getTranslation("programs", lang), href: "/programs" },
       { name: "Student Mobility", href: "/student-mobility" },
+      { name: "Grading Systems", href: "/grading-systems" },
       { name: getTranslation("visa", lang), href: "/visa" },
       { name: getTranslation("accommodation", lang), href: "/accommodation" },
       { name: getTranslation("studentResources", lang), href: "/resources" },
