@@ -526,11 +526,11 @@ export default function GradingSystemsPage() {
                     <ul className="space-y-3">
                       <li className="flex items-start gap-2 text-zinc-600 dark:text-zinc-300">
                         <Award className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Bachelor's degree programs:</strong> Maximum 8 years</span>
+                        <span><strong>Bachelor's degree programs:</strong> 4 years</span>
                       </li>
                       <li className="flex items-start gap-2 text-zinc-600 dark:text-zinc-300">
                         <Award className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
-                        <span><strong>Master's degree programs:</strong> Maximum 4 years</span>
+                        <span><strong>Master's degree programs:</strong> 2 years</span>
                       </li>
                       <li className="flex items-start gap-2 text-zinc-600 dark:text-zinc-300">
                         <CheckCircle className="h-4 w-4 text-orange-600 mt-0.5 flex-shrink-0" />
