@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, useScroll, useSpring } from "framer-motion"
-import { Calendar, ArrowRight, Filter, Search, Play } from "lucide-react"
+import { Calendar, ArrowRight, Filter, Search, Play, Globe, ExternalLink, FileText, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -384,6 +384,145 @@ export default function NewsPage() {
               <div className="text-zinc-600 dark:text-zinc-300">{t("findWhatYouNeed")}</div>
             </motion.div>
           </div>
+
+          {/* Erasmus+ Staff Mobility Call Box */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-6 rounded-2xl border-2 border-orange-500 bg-gradient-to-br from-orange-50 to-amber-50 p-6 shadow-md transition hover:shadow-xl dark:from-orange-950/30 dark:to-amber-950/30 dark:border-orange-600"
+          >
+            <div className="flex items-center gap-3 mb-4">
+              <Globe className="h-10 w-10 text-orange-600 flex-shrink-0" />
+              <div>
+                <div className="font-black text-xl text-zinc-900 dark:text-zinc-100 uppercase leading-tight">
+                  Erasmus+ Staff Mobility Call 2025/2026
+                </div>
+                <div className="text-sm font-semibold text-orange-700 dark:text-orange-400 mt-1">
+                  Teaching and Training Mobility – University of Barcelona (Partner University Call)
+                </div>
+              </div>
+            </div>
+            
+            <div className="text-sm text-zinc-700 dark:text-zinc-300 mb-6 space-y-4">
+              <div>
+                <h4 className="font-bold text-zinc-900 dark:text-zinc-100 mb-2">Call Overview</h4>
+                <p className="text-xs leading-relaxed">
+                  Urgench RANCH University of Technology informs its academic and administrative staff about a Call for Applications for Erasmus+ Staff Mobility (Teaching and Training) announced by our partner institution, the University of Barcelona (Spain), for the 2025/2026 academic year. This mobility opportunity is offered within the framework of the Erasmus+ International Credit Mobility (ICM) programme.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="bg-white/60 dark:bg-zinc-900/60 rounded-lg p-3 border border-orange-200 dark:border-orange-800">
+                  <div className="flex items-start gap-2 mb-1">
+                    <span className="text-orange-600 font-bold">📌</span>
+                    <div className="flex-1">
+                      <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 mb-1">Application Deadline</div>
+                      <div className="text-sm font-bold text-orange-700 dark:text-orange-400">20 February 2026</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/60 dark:bg-zinc-900/60 rounded-lg p-3 border border-orange-200 dark:border-orange-800">
+                  <div className="flex items-start gap-2 mb-1">
+                    <span className="text-orange-600 font-bold">📅</span>
+                    <div className="flex-1">
+                      <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 mb-1">Application Period</div>
+                      <div className="text-xs font-bold text-orange-700 dark:text-orange-400">07 Nov 2025 – 20 Feb 2026</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/60 dark:bg-zinc-900/60 rounded-lg p-3 border border-orange-200 dark:border-orange-800">
+                  <div className="flex items-start gap-2 mb-1">
+                    <span className="text-orange-600 font-bold">📚</span>
+                    <div className="flex-1">
+                      <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 mb-1">Types Available</div>
+                      <div className="text-xs font-bold text-orange-700 dark:text-orange-400">Teaching (STA) & Training (STT)</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/60 dark:bg-zinc-900/60 rounded-lg p-3 border border-orange-200 dark:border-orange-800">
+                  <div className="flex items-start gap-2 mb-1">
+                    <span className="text-orange-600 font-bold">✅</span>
+                    <div className="flex-1">
+                      <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-400 mb-1">Resolution Publication</div>
+                      <div className="text-xs font-bold text-orange-700 dark:text-orange-400">31 March 2026</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-orange-100/50 dark:bg-orange-950/30 rounded-lg p-3 border border-orange-300 dark:border-orange-800">
+                <p className="text-xs font-semibold text-orange-800 dark:text-orange-300">
+                  ⚠ <strong>Important:</strong> Staff applying for training mobility, especially those wishing to participate in the International Staff Week at the University of Barcelona, must apply no later than 20 February 2026 in order to allow proper preparation of mobility dates.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-zinc-900 dark:text-zinc-100 mb-2 text-sm">Application Procedure</h4>
+                <ol className="text-xs space-y-1 list-decimal list-inside ml-2">
+                  <li>Applicants must submit their application through the University of Barcelona's Erasmus+ online application system (new software).</li>
+                  <li>The University of Barcelona, as the host institution, will assess the feasibility of the proposed mobility.</li>
+                  <li>Urgench RANCH University of Technology as the home institution, will verify eligibility, conduct internal evaluation, and participate in the final selection together with the host institution.</li>
+                </ol>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-zinc-900 dark:text-zinc-100 mb-2 text-sm">Required Documents</h4>
+                <ul className="text-xs space-y-1 list-disc list-inside ml-2">
+                  <li>Completed Online Application Form</li>
+                  <li>Curriculum Vitae (CV) in English, preferably in Europass format</li>
+                  <li>Mobility Agreement (Teaching Programme for STA or Training/Work Plan for STT)</li>
+                  <li>Motivation Letter</li>
+                  <li>Invitation or Acceptance from the Host Department (if required)</li>
+                  <li>Proof of Employment</li>
+                  <li>Language Proficiency (if required)</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-bold text-zinc-900 dark:text-zinc-100 mb-3 text-sm">Annex</h4>
+                <a
+                  href="/Annex.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg bg-white border-2 border-orange-500 px-4 py-3 text-sm font-bold text-orange-600 transition hover:bg-orange-50 hover:border-orange-600 dark:bg-zinc-900 dark:border-orange-600 dark:text-orange-400 dark:hover:bg-orange-950/30"
+                >
+                  <Download className="h-4 w-4" />
+                  Download Annex (PDF)
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-orange-200 dark:border-orange-800">
+              <a
+                href="https://www.ub.edu/mobilitat-internacional/en/incoming-teachers-and-researchers/erasmus-international-credit-mobility"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-orange-600 px-6 py-3 text-sm font-bold text-white transition hover:bg-orange-700 flex-1"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Official Call Information
+              </a>
+              <a
+                href="mailto:internationaldepartment@utu-ranch.uz"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-orange-600 bg-transparent px-6 py-3 text-sm font-bold text-orange-600 transition hover:bg-orange-600 hover:text-white dark:text-orange-400 dark:border-orange-400 flex-1"
+              >
+                <FileText className="h-4 w-4" />
+                Contact International Department
+              </a>
+              <a
+                href="mailto:erasmus.icm@ub.edu"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-orange-600 bg-transparent px-6 py-3 text-sm font-bold text-orange-600 transition hover:bg-orange-600 hover:text-white dark:text-orange-400 dark:border-orange-400 flex-1"
+              >
+                <FileText className="h-4 w-4" />
+                Contact University of Barcelona
+              </a>
+            </div>
+          </motion.div>
         </div>
       </section>
 
